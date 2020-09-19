@@ -115,7 +115,9 @@ const TypingGame = (props) => {
         <Grid xs={12} item>
             <Paper square={true} variant="outlined">
                 <Typography variant="h2">Type This</Typography>
+                <br />
                 <Typography variant="h4">{quote.text}</Typography>
+                <Typography variant="overline">{quote.person}</Typography>
             </Paper>
         </Grid>
 
@@ -125,7 +127,7 @@ const TypingGame = (props) => {
                 <Typography variant="h2">Or Die!</Typography>
                 <br />
                 <TextField
-                    placeholder={!hasStarted ? "Type on!" : ""}
+                    placeholder={!hasStarted ? "Type into this space here" : ""}
                     focused={true}
                     error={hasErrors}
                     fullWidth={true}
